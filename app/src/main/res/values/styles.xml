@@ -1,8 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="TransparentTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background</item>
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/sky_blue</item>
+        <item name="colorPrimaryDark">@color/sky_blue</item>
+        <!--    <item name="colorAccent">@color/fortiss_blue</item> -->
+    </style>
+
+    <style name="TransparentTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="actionBarTabBarStyle">@style/MyTabBar</item>
+        <item name="android:actionBarTabBarStyle">@style/MyTabBar</item>
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>
+        <item name="actionBarTabStyle">@style/MyActionBarTabs</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/actionbar_background</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/actionbar_background</item>
+        <item name="android:displayOptions">homeAsUp|showHome|showTitle</item>
+        <item name="android:logo">@drawable/actionbar_space_between_icon_and_title</item>
+        <item name="android:backgroundStacked">@color/sky_blue</item>
+        <item name="displayOptions">homeAsUp|showHome|showTitle</item>
+        <item name="android:titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
+    </style>
+
+    <!-- ActionBar tabs styles -->
+    <style name="MyActionBarTabs" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+    </style>
+
+    <style name="MyTabBar" parent="@style/Widget.AppCompat.ActionBar.TabBar">
+        <item name="android:background">@drawable/tab_bar_background</item>
+        <item name="android:showDividers">none</item>
+        <item name="showDividers">none</item>
+    </style>
+
+    <style name="ActionBarStyle.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TabTextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@drawable/tab_text_color_selector</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="titlesBackground">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="titlesDivider">
+        <item name="android:background">@color/light_grey</item>
+    </style>
+
+    <style name="CustomCheckBox">
+        <item name="android:theme">@style/CheckBoxAppTheme</item>
+    </style>
+
+    <style name="CheckBoxAppTheme">
+        <item name="android:colorAccent">@color/white</item>
+        <item name="android:colorControlNormal">@color/white</item>
+        <item name="android:colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="SwitchTextAppearance">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
 </resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_feedbackImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="showLevelInfo"
+                android:src="@drawable/lvl_6" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_energy_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="showEnergyActivity"
+            android:paddingBottom="8dp" >
+
+            <TextView
+                android:id="@+id/tvToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="72dp"
+                android:text="@string/main_energy_today"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/light_blue" />
+        </RelativeLayout>
+        <include layout="@layout/divider_dark"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showEnergyActivity" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="72dp"
+                android:text="0.67 kWh"
+                android:textSize="@dimen/text_display_1" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/chartContainerTree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="showEnergyActivity" >
+
+            <TextView
+                android:id="@+id/tvMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="72dp"
+                android:onClick="showEnergyActivity"
+                android:text="28% more than average."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_circle_red" />
+        </RelativeLayout>
+
+
+
+        <include layout="@layout/divider_dark"/>
+
+        <RelativeLayout
+            android:id="@+id/r2_energy_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="showEnergyActivity"
+            android:paddingBottom="8dp" >
+
+            <TextView
+                android:id="@+id/carToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="72dp"
+                android:text="@string/car_energy_today"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/light_blue" />
+        </RelativeLayout>
+        <include layout="@layout/divider_dark"/>
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_status_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showRatingActivity"
+            android:paddingTop="16dp" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/calendar_icon" />
+
+            <TextView
+                android:id="@+id/CarBattery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="72dp"
+                android:text="98%"
+                android:textSize="@dimen/text_display_1" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/carContainerTree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="showEnergyActivity" >
+
+            <TextView
+                android:id="@+id/carMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="72dp"
+                android:onClick="showEnergyActivity"
+                android:text="Next Booking: 28Jan"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/car"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_circle_red" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

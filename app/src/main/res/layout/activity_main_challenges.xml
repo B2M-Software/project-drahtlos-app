@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="16dp"
+    android:paddingRight="32dp"
+    android:paddingTop="16dp"
+    android:onClick="showChallenges" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="72dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_challengeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_challenges"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/light_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_challengeHeader"
+            android:text="Today 2/4"
+            android:textSize="@dimen/text_size_subhead_material" />
+    </RelativeLayout>
+
+</RelativeLayout>

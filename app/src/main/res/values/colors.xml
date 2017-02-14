@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="fortiss_blue">#003CDB</color>
+    <color name="fortiss_blue_dark">#13294B</color>
+    <color name="fortiss_cool_gray">#75787B</color>
+    <color name="fortiss_baige">#A69F88</color>
+
+    <!-- Extended colors -->
+    <color name="fortiss_pink">#CE0058</color>
+    <color name="fortiss_green">#00AB84</color>
+    <color name="fortiss_yellow">#FEDD00</color>
+
+    <!-- My colors need to be removed probably -->
+    <color name="fortiss_white">#DFDFDF</color>
+    <color name="fortiss_orange">#FEAA7E</color>
+    <!-- <color name="fortiss_gray">#2C323F</color> -->
+    <color name="fortiss_gray">#13294B</color>
+    <color name="fortiss_black">#15181E</color>
+
+
+    <!-- there are some unused and redundant colors here.. -->
+    <color name="menu_selected_grey">#EEEEEE</color>
+    <color name="grey">#49494a</color>
+    <color name="light_grey">#b9b9b9</color>
+    <color name="blue_grey">#6d6d7f</color>
+    <color name="light_blue">#01579b</color>
+
+
+    <color name="sky_blue">#1565c0</color>
+    <color name="sky_blue_sec">#01579b</color>
+    <color name="sky_blue_2">#4c536e</color>
+    <color name="sky_blue_sec_2">#3c4157</color>
+    <color name="sky_blue_3">#45558c</color>
+    <color name="sky_blue_sec_3">#33406b</color>
+    <color name="sky_blue_dark">#01579b</color>
+
+
+    <color name="transparent">#00313131</color>
+    <color name="white">#ffffff</color>
+    <color name="white_80">#E6ffffff</color>
+    <color name="white_60">#96ffffff</color>
+
+
+    <!--  RATING COLORS -->
+    <color name="green">#258e56</color>
+    <color name="rating_red">#dd2c00</color>
+    <color name="rating_orange">#ff8f00</color>
+
+    <!-- 13% opacity black on white background -->
+    <color name="divider_color">#DEDEDE</color>
+
+</resources>

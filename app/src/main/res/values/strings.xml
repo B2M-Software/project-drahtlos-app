@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">smg</string>
+    <string name="action_logout">Logout/Change User</string>
+    <string name="action_login">Login</string>
+    <string name="guest_login">Login as guest</string>
+    <string name="user">Username</string>
+    <string name="password">Password</string>
+    <string name="mac_address">Your Mac-address:</string>
+    <string name="wrong_data">Your user name and password do not match</string>
+    <string name="login_failed">Something went wrong at the server. Your login was denied without error message. Please try again later.\n
+        If this problem occurs again please contact your admin</string>
+    <string name="user_guest">Guest</string>
+    <!--Home strings-->
+    <string name="title_challenges">CHALLENGES</string>
+    <string name="main_status_blinds_text">Blinds</string>
+    <string name="main_status_light_text">Light</string>
+    <string name="main_status_not_occupied_text">The office is not occupied.</string>
+    <string name="main_status_sunny_text">It is sunny outside.</string>
+    <string name="main_energy_today">CONSUMPTION TODAY</string>
+    <string name="car_energy_today">CAR BATTERY</string>
+
+
 </resources>
